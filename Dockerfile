@@ -24,4 +24,6 @@ RUN pip install --no-cache-dir -r requirements-dev.txt \
 
 COPY pytm ./pytm
 COPY docs ./docs
+COPY generate-report.py ./
 COPY *.py Makefile ./
+CMD ["generate-report.py"]
